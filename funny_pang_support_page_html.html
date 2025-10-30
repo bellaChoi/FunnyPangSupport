@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FunnyPang — Support</title>
+  <meta name="description" content="Support page for FunnyPang, a fast number‑block puzzle game. Contact, FAQ, and Privacy Policy." />
+  <link rel="icon" href="favicon.png" />
+  <style>
+    :root{
+      --bg:#0f1115;--card:#171A21;--text:#E8EAED;--muted:#B4B8C2;--accent:#6EE7FF;--accent2:#A78BFA;
+      --max:980px;--radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:rgba(15,17,21,.8);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06);z-index:10}
+    .wrap{max-width:var(--max);margin:0 auto;padding:20px}
+    .nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .nav .right{display:flex;gap:20px;flex-wrap:wrap}
+    .badge{display:inline-block;padding:.25rem .6rem;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0a0c10;font-weight:700}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:56px 20px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:20px}
+    h1{font-size:2.2rem;line-height:1.2;margin:.25rem 0 1rem}
+    h2{font-size:1.5rem;margin:1.6rem 0 .6rem}
+    h3{font-size:1.15rem;margin:1.2rem 0 .4rem}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .shot{aspect-ratio:9/19.5;background:#0b0d11;border:1px dashed #334;display:flex;align-items:center;justify-content:center;border-radius:12px}
+    .shot small{color:#6b7280}
+    footer{border-top:1px solid rgba(255,255,255,.06);margin-top:40px}
+    .lang{font-size:.9rem;color:var(--muted)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div><span class="badge">FunnyPang</span></div>
+      <nav class="right">
+        <a href="#support">Support</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="lang">EN / KO bilingual • App support & privacy</p>
+        <h1>Fast Number‑Block Puzzle — <em>FunnyPang</em></h1>
+        <p>
+          Place falling number blocks. When adjacent sums make <strong>10</strong>, they clear. 
+          No space left to spawn? Game over.
+        </p>
+        <p>
+          <!-- TODO: Replace below placeholders with your real store links or remove buttons. -->
+          <a class="badge" href="#" aria-disabled="true">App Store (Coming Soon)</a>
+          <a class="badge" href="#" aria-disabled="true" style="margin-left:8px">Google Play (Coming Soon)</a>
+        </p>
+      </div>
+      <div class="card">
+        <h3>Screenshots / App Preview</h3>
+        <div class="grid">
+          <!-- TODO: Replace the <div class="shot"> with <img> tags once you have images.  
+               Example: <img class="shot" src="images/screen1_en.png" alt="FunnyPang gameplay" /> -->
+          <div class="shot"><small>screen1.png</small></div>
+          <div class="shot"><small>screen2.png</small></div>
+          <div class="shot"><small>screen3.png</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="card">
+      <h2>Support / 지원</h2>
+      <p>
+        If you need help, email us at <strong>dev.tenpop@gmail.com</strong>.
+        We usually reply within 3 business days.
+      </p>
+    </section>
+
+    <section id="faq" class="card">
+      <h2>FAQ</h2>
+      <h3>How do I clear blocks?</h3>
+      <p>When a block and its neighbors add up to <strong>10</strong>, they clear automatically.</p>
+      <h3>I saw ads / rewarded videos. Why?</h3>
+      <p>FunnyPang may show ads to keep the game free. Optional rewarded ads grant in‑game benefits. See Privacy for ad partners.</p>
+      <h3>Does the game collect personal data?</h3>
+      <p>We do not collect personal identifiers beyond what our analytics/ads partners provide (e.g., device or ad identifiers). See Privacy below.</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:dev.tenpop@gmail.com">dev.tenpop@gmail.com</a></p>
+    </section>
+
+    <section id="privacy" class="card">
+      <h2>Privacy Policy</h2>
+      <p>Last updated: 2025‑10‑28</p>
+      <p>
+        FunnyPang may use third‑party SDKs for analytics and advertising. These partners may collect device data (e.g., ad identifiers, coarse location, usage events) to deliver services like crash reporting, performance measurement, and personalized or contextual ads.
+      </p>
+      <h3>Data We Process</h3>
+      <ul>
+        <li>Device & app info (model, OS, app version, performance metrics)</li>
+        <li>Advertising & analytics identifiers (e.g., IDFA/GAID) — if available</li>
+        <li>Gameplay events (level progress, session length, generic actions)</li>
+      </ul>
+      <h3>Your Choices</h3>
+      <ul>
+        <li>iOS: You can deny tracking permission (ATT). You can also reset the ad identifier.</li>
+        <li>Android: You can reset/limit ad personalization in system settings.</li>
+        <li>You can disable personalized ads where the ad SDK provides that setting.</li>
+      </ul>
+      <h3>Children</h3>
+      <p>If the app is set to a child audience, we request child‑directed ad settings and show age‑appropriate ads. Parents can contact us for inquiries.</p>
+      <h3>Contact</h3>
+      <p>Questions about privacy? <a href="mailto:dev.tenpop@gmail.com">dev.tenpop@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="padding:24px 20px;color:var(--muted)">
+      © 2025 Byteplay. FunnyPang. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
